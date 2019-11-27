@@ -31,6 +31,15 @@ public class DirectoryAnalysis implements FileAnalysis {
         return file.isDirectory();
     }
 
+    @Override
+    public void getInformationAboutFunctions() {
+        System.out.println("It's directory, you can use this function:\n" +
+                "1: listing files in a directory \n" +
+                "2: counting the size of all files in a directory \n" +
+                "3: output of the number of files grouped by extension\n" +
+                "Type one of this number" );
+    }
+
     public DirectoryAnalysis(){}
 
     public boolean isEmpty(File directory) {
